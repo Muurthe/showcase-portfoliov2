@@ -1,12 +1,22 @@
-@import "tailwindcss";
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
 
 :root {
-  color-scheme: dark;
+  --bg: 45 50 80;        /* navy */
+  --surface: 66 70 105;   /* Lighter Blue, for cards */
+  --text: 252 243 232;   /* near-white */
+  --muted: 214 205 196;  /* muted text */
+  --accent: 248 177 121; /* warm/oranje */
+}
+
+
+html {
+  background-color: rgb(var(--bg));
+   color: rgb(var(--text));
 }
 
 body {
-  @apply bg-neutral-950 text-neutral-100 antialiased;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
