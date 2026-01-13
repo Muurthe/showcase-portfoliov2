@@ -1,7 +1,13 @@
+// src/app/page.tsx
+import Hero from "@/components/sections/Hero";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-neutral-950 text-white">
-      <h1 className="text-4xl font-bold">Portfolio setup works 🚀</h1>
+    <main className="pt-20">
+      <section id="hero">
+        <Hero />
+      </section>
     </main>
   );
 }
+
