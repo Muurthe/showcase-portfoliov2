@@ -1,4 +1,3 @@
-// src/components/sections/About.tsx
 import Image from "next/image";
 
 export default function About() {
