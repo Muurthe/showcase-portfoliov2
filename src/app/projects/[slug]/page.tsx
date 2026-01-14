@@ -1,4 +1,3 @@
-// src/app/projects/[slug]/page.tsx
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -100,12 +99,14 @@ function Section({
   );
 }
 
-export default function ProjectDetailPage ({
+export default async function ProjectDetailPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const project = PROJECTS.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+
+  const project = PROJECTS.find((p) => p.slug === slug);
   if (!project) return notFound();
 
   return (
@@ -125,7 +126,6 @@ export default function ProjectDetailPage ({
 
         {/* Hero images */}
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {/* big image */}
           <div className="md:col-span-2 overflow-hidden rounded-2xl border border-white/10 bg-white/5">
             <Image
               src={project.heroImages[0].src}
@@ -137,7 +137,6 @@ export default function ProjectDetailPage ({
             />
           </div>
 
-          {/* small image */}
           <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5">
             <Image
               src={project.heroImages[1].src}
@@ -149,7 +148,6 @@ export default function ProjectDetailPage ({
           </div>
         </div>
 
-        {/* About / Problem / Solution */}
         <Section title="About Cardan">
           <p>{project.about}</p>
         </Section>
@@ -162,7 +160,6 @@ export default function ProjectDetailPage ({
           <p>{project.solution}</p>
         </Section>
 
-        {/* Tech stack + small note */}
         <Section title="Tech stack">
           <ul className="list-disc pl-5 space-y-2">
             {project.techStack.map((t) => (
@@ -175,7 +172,6 @@ export default function ProjectDetailPage ({
           )}
         </Section>
 
-        {/* Showcase */}
         <Section title={project.showcaseTitle}>
           <p>{project.showcaseText}</p>
 
@@ -193,7 +189,6 @@ export default function ProjectDetailPage ({
             </div>
           )}
 
-          {/* icons row like your screenshot */}
           <div className="mt-6 flex items-center gap-4 text-white/90">
             {project.githubUrl && (
               <a
@@ -223,12 +218,10 @@ export default function ProjectDetailPage ({
           </div>
         </Section>
 
-        {/* Reflection */}
         <Section title="Reflection">
           <p>{project.reflection}</p>
         </Section>
 
-        {/* Bottom action */}
         <div className="mt-20">
           <Link
             href="/#work"
