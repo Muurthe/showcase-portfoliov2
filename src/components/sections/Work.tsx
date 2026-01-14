@@ -21,8 +21,8 @@ const projects: Project[] = [
     imageSrc: "/project.png",
     imageAlt: "Cardan project screenshot",
     slug: "cardan",
-    githubUrl: "https://github.com/Muurthe/showcase-portfoliov2",
-    liveUrl: "https://i562854.hera.fontysict.net/Roomfolio/",
+    githubUrl: "https://github.com/jarvin-s/cardan",
+    liveUrl: "https://cardan-groep-1.vercel.app/nl",
   },
   {
     title: "Roomfolio",
@@ -32,17 +32,7 @@ const projects: Project[] = [
     imageSrc: "/project.png",
     imageAlt: "Roomfolio project screenshot",
     slug: "roomfolio",
-    githubUrl: "https://github.com/Muurthe/showcase-portfoliov2",
-    liveUrl: "https://i562854.hera.fontysict.net/Roomfolio/",
-  },
-  {
-    title: "Project 3",
-    description: "loremjdksfdlkjsdfjksld",
-    tags: ["Tailwind CSS", "Next.js"],
-    imageSrc: "/project.png",
-    imageAlt: "Project 3 screenshot",
-    slug: "project-3",
-    githubUrl: "https://github.com/Muurthe/showcase-portfoliov2",
+    githubUrl: "https://github.com/Muurthe/Roomfolio",
     liveUrl: "https://i562854.hera.fontysict.net/Roomfolio/",
   },
 ];
@@ -161,6 +151,7 @@ export default function Work() {
                 >
                   Learn more
                 </Link>
+                <p className="mt-2 text-white/50 text-xs">{`/projects/${p.slug}`}</p>
               </div>
             </div>
           </article>
