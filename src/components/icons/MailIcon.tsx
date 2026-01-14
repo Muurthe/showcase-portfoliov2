@@ -1,5 +1,4 @@
 export default function MailIcon({
-    className = "",
 }: {
     className?: string;
 }) {

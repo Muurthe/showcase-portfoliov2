@@ -1,5 +1,4 @@
 export default function GithubIcon({
-    className = "",
 }: {
     className?: string;
 }) {

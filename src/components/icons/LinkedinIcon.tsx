@@ -1,5 +1,4 @@
 export default function LinkedinIcon({
-    className = "",
 }: {
     className?: string;
 }) {
