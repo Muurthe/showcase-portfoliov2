@@ -1,6 +1,7 @@
 // src/app/page.tsx
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Work from "@/components/sections/Work";
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
       </section>
       <section id="about">
         <About />
+      </section>
+      <section id="work">
+        <Work />
       </section>
     </main>
   );
