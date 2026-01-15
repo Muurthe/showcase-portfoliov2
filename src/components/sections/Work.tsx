@@ -92,12 +92,9 @@ export default function Work() {
             </div>
 
             {/* Right column */}
-            <div className="relative">
-              {/* Offset block behind image */}
-              <div className="absolute bottom-20 left-5 h-[80%] w-full rounded-sm bg-[rgb(var(--surface))]" />
-
+            <div className="relative pb-10">
               {/* Image */}
-              <div className="relative overflow-hidden rounded-sm border border-white/10 bg-white/5 shadow-[0_18px_60px_rgba(0,0,0,0.45)]">
+              <div className="relative rounded-sm border border-white/10 bg-white/5 shadow-[0_18px_60px_rgba(0,0,0,0.45)]">
                 <Image
                   src={p.imageSrc}
                   alt={p.imageAlt}
@@ -109,7 +106,7 @@ export default function Work() {
               </div>
 
               {/* Bottom-right actions */}
-              <div className="mt-2 flex items-center justify-end gap-4">
+              <div className="mt-5 flex items-center justify-end gap-4">
                 {p.githubUrl && (
                   <a
                     href={p.githubUrl}
