@@ -8,8 +8,8 @@ type Project = {
   imageSrc: string; 
   imageAlt: string;
   slug: string; // /projects/[slug]
-  githubUrl?: string;
-  liveUrl?: string;
+  githubUrl: string;
+  liveUrl: string;
 };
 
 const projects: Project[] = [
@@ -18,7 +18,7 @@ const projects: Project[] = [
     description:
       "Interactive web application translating Cardan’s five physical experience stations designed to raise awareness of disabilities into an accessible digital experience.",
     tags: ["Next.js"],
-    imageSrc: "/project.png",
+    imageSrc: "/cardan.png",
     imageAlt: "Cardan project screenshot",
     slug: "cardan",
     githubUrl: "https://github.com/jarvin-s/cardan",
@@ -29,7 +29,7 @@ const projects: Project[] = [
     description:
       "Interactive 3D roomfolio that functions as an online portfolio, allowing users to navigate a virtual room and interact with objects showcasing my web projects.",
     tags: ["Blender", "Three.js"],
-    imageSrc: "/project.png",
+    imageSrc: "/roomfolio.png",
     imageAlt: "Roomfolio project screenshot",
     slug: "roomfolio",
     githubUrl: "https://github.com/Muurthe/Roomfolio",
@@ -151,7 +151,6 @@ export default function Work() {
                 >
                   Learn more
                 </Link>
-                <p className="mt-2 text-white/50 text-xs">{`/projects/${p.slug}`}</p>
               </div>
             </div>
           </article>
