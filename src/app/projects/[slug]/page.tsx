@@ -20,8 +20,8 @@ type Project = {
   showcaseText: string;
   showcaseVideoSrc?: string;
   reflection: string;
-  githubUrl?: string;
-  liveUrl?: string;
+  githubUrl: string;
+  liveUrl: string;
 };
 
 const PROJECTS: Project[] = [

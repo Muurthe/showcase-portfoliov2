@@ -1,11 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import GithubIcon from "@/components/icons/GithubIcon";
+import ExternalLinkIcon from "@/components/icons/ExternalLinkIcon";
 
 type Project = {
   title: string;
   description: string;
   tags: string[];
-  imageSrc: string; 
+  imageSrc: string;
   imageAlt: string;
   slug: string; // /projects/[slug]
   githubUrl: string;
@@ -36,28 +38,6 @@ const projects: Project[] = [
     liveUrl: "https://i562854.hera.fontysict.net/Roomfolio/",
   },
 ];
-
-function IconGithub(props: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className={props.className}>
-      <path
-        fill="currentColor"
-        d="M12 .5C5.73.5.75 5.6.75 12c0 5.2 3.44 9.6 8.2 11.16.6.12.82-.27.82-.58v-2.1c-3.34.75-4.04-1.46-4.04-1.46-.54-1.42-1.33-1.8-1.33-1.8-1.1-.78.08-.76.08-.76 1.2.09 1.84 1.27 1.84 1.27 1.08 1.9 2.84 1.35 3.54 1.03.11-.8.42-1.35.76-1.66-2.66-.31-5.46-1.37-5.46-6.1 0-1.35.47-2.45 1.24-3.31-.12-.31-.54-1.57.12-3.27 0 0 1.01-.33 3.3 1.26.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.29-1.59 3.3-1.26 3.3-1.26.66 1.7.24 2.96.12 3.27.77.86 1.24 1.96 1.24 3.31 0 4.74-2.8 5.78-5.47 6.09.43.38.82 1.12.82 2.27v3.37c0 .31.22.7.82.58C19.81 21.6 23.25 17.2 23.25 12 23.25 5.6 18.27.5 12 .5Z"
-      />
-    </svg>
-  );
-}
-
-function IconExternal(props: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className={props.className}>
-      <path
-        fill="currentColor"
-        d="M14 3h7v7h-2V6.41l-9.29 9.3-1.42-1.42 9.3-9.29H14V3ZM5 5h7v2H7v10h10v-5h2v7H5V5Z"
-      />
-    </svg>
-  );
-}
 
 export default function Work() {
   return (
@@ -106,17 +86,17 @@ export default function Work() {
               </div>
 
               {/* Bottom-right actions */}
-              <div className="mt-5 flex items-center justify-end gap-4">
+              <div className="mt-6 flex items-center justify-end gap-4">
                 {p.githubUrl && (
                   <a
                     href={p.githubUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-white/90 hover:text-white transition"
                     aria-label="Open GitHub repository"
                     title="GitHub"
+                    className="opacity-80 transition hover:opacity-100"
                   >
-                    <IconGithub className="h-6 w-6" />
+                    <GithubIcon className="h-5 w-5" />
                   </a>
                 )}
 
@@ -125,30 +105,32 @@ export default function Work() {
                     href={p.liveUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-white/90 hover:text-white transition"
                     aria-label="Open live project"
                     title="Live"
+                    className="opacity-80 transition hover:opacity-100"
                   >
-                    <IconExternal className="h-6 w-6" />
+                    <ExternalLinkIcon className="h-3 w-3" />
                   </a>
                 )}
               </div>
 
-              {/* Learn more button bottom-right */}
-              <div className="mt-4 flex justify-end">
-                <Link
-                  href={`/projects/${p.slug}`}
-                  className="
-                    inline-flex items-center justify-center
-                    rounded-xl border-2 border-[rgb(var(--surface))]
-                    px-6 py-3 font-semibold text-[rgb(var(--surface))]
-                    transition
-                    hover:bg-[rgb(var(--surface))] hover:text-[rgb(var(--bg))]
-                  "
-                >
-                  Learn more
-                </Link>
-              </div>
+              {/* Learn more — ONLY for Cardan */}
+              {p.slug === "cardan" && (
+                <div className="mt-4 flex justify-end">
+                  <Link
+                    href={`/projects/${p.slug}`}
+                    className="
+                      inline-flex items-center justify-center
+                      rounded-xl border-2 border-[rgb(var(--surface))]
+                      px-6 py-3 font-semibold text-[rgb(var(--surface))]
+                      transition
+                      hover:bg-[rgb(var(--surface))] hover:text-[rgb(var(--bg))]
+                    "
+                  >
+                    Learn more
+                  </Link>
+                </div>
+              )}
             </div>
           </article>
         ))}
