@@ -15,7 +15,8 @@ export default function Contact() {
                     <div className="mt-14">
                         {/* contact button */}
                         <Link
-                            href="#contact"
+                            href="mailto:mirtheverdurmen@hotmail.com"
+                            aria-label="Email"
                             className="
                             inline-flex items-center justify-center
                             rounded-xl border-2 border-[rgb(var(--accent))]
@@ -23,6 +24,7 @@ export default function Contact() {
                             transition
                             hover:bg-[rgb(var(--accent))] hover:text-[rgb(var(--bg))]
                             "
+
                         >
                             Say Hello
                         </Link>
