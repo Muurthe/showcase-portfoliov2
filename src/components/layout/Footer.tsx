@@ -90,7 +90,7 @@ export default function Footer() {
                                     aria-label="Email"
 
                                 >
-                                    <MailIcon className="h-9 w-9 opacity-90 hover:opacity-100" />
+                                    <MailIcon className="h-9 w-9 " />
                                 </a>
 
                                 <a
@@ -100,7 +100,7 @@ export default function Footer() {
                                     aria-label="LinkedIn"
                                     className="opacity-90 transition hover:opacity-100"
                                 >
-                                    <LinkedinIcon className="h-9 w-9 opacity-90 hover:opacity-100" />
+                                    <LinkedinIcon className="h-9 w-9 " />
                                 </a>
 
                                 <a
@@ -110,7 +110,7 @@ export default function Footer() {
                                     aria-label="GitHub"
                                     className="opacity-90 transition hover:opacity-100"
                                 >
-                                    <GithubIcon className="h-9 w-9 opacity-90 hover:opacity-100" />
+                                    <GithubIcon className="h-9 w-9 " />
                                 </a>
                             </div>
                         </div>
