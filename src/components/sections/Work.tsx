@@ -19,7 +19,7 @@ const projects: Project[] = [
     title: "Cardan",
     description:
       "Interactive web application translating Cardan’s five physical experience stations designed to raise awareness of disabilities into an accessible digital experience.",
-    tags: ["Next.js"],
+    tags: ["Next.js", "TypeScript", "CSS", "Framer Motion"],
     imageSrc: "/cardan.png",
     imageAlt: "Cardan project screenshot",
     slug: "cardan",
