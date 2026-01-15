@@ -223,7 +223,7 @@ export default async function ProjectDetailPage({
         <div className="mt-20">
           <Link
             href="/#work"
-            className="text-white/80 underline decoration-white/30 underline-offset-4 hover:text-white"
+            className="text-[rgb(var(--text))] underline decoration-white/30 underline-offset-4 hover:text-white"
           >
             ← Back to selected work
           </Link>
