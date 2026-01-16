@@ -60,7 +60,7 @@ export default function Work() {
 
               {/* Description block */}
               <div className="mt-6 w-full max-w-90 rounded-sm bg-[rgb(var(--surface))] p-6 text-white/80 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
-                <p className="text-[14px] leading-relaxed">{p.description}</p>
+                <p className="leading-relaxed">{p.description}</p>
               </div>
 
               {/* Tags bottom-left like in screenshot */}

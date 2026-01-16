@@ -10,14 +10,14 @@ export default function About() {
             About
           </h2>
 
-          <p className="mt-10 text-[28px] leading-[1.35] text-[rgb(var(--text))]">
+          <p className="mt-10 leading-[1.35] text-[rgb(var(--text))]">
             I&apos;m a front-end developer with a strong interest in solving
             problems through design and code. I focus on building intuitive,
             user-friendly web experiences and enjoy exploring new technologies to
             continuously improve my skills.
           </p>
 
-          <p className="mt-12 text-[28px] leading-[1.35] text-[rgb(var(--text))]">
+          <p className="mt-12 leading-[1.35] text-[rgb(var(--text))]">
             I&apos;m passionate about the intersection of technology and design,
             and how they work together to create meaningful digital products. My
             goal is to bring ideas to life in a way that feels clear, engaging,

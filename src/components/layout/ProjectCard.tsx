@@ -22,7 +22,7 @@ export default function ProjectCard({ title, description, tags, href }: ProjectC
     >
       <h3 className="text-3xl font-semibold text-[rgb(var(--text))]">{title}</h3>
 
-      <p className="mt-4 text-lg leading-relaxed text-white/80">
+      <p className="mt-4 leading-relaxed text-white/80">
         {description}
       </p>
 
