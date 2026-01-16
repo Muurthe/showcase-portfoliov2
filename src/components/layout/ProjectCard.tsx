@@ -10,22 +10,9 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ title, description, tags, href }: ProjectCardProps) {
   return (
-    <div
-      className="
-        rounded-sm border border-white/10
-        bg-white/5
-        p-8
-        shadow-[0_12px_40px_rgba(0,0,0,0.25)]
-        transition
-        hover:bg-white/7 hover:border-white/15
-      "
-    >
+    <div>
       <h3 className="text-3xl font-semibold text-[rgb(var(--text))]">{title}</h3>
-
-      <p className="mt-4 leading-relaxed text-white/80">
-        {description}
-      </p>
-
+      <p className="mt-4 leading-relaxed text-white/80">{description}</p>
       <div className="mt-6 flex flex-wrap gap-3">
         {tags.map((t) => (
           <span

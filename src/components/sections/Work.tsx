@@ -41,8 +41,8 @@ const projects: Project[] = [
 
 export default function Work() {
   return (
-    <div className="mx-auto w-full max-w-6xl px-6 py-28">
-      <h2 className="text-[72px] font-extrabold leading-[0.95] text-[rgb(var(--text))]">
+    <div className="mx-auto w-full max-w-5xl px-6 py-28">
+      <h2 className="text-4xl font-extrabold leading-[0.95] text-[rgb(var(--text))]">
         Selected work
       </h2>
 
@@ -54,12 +54,12 @@ export default function Work() {
           >
             {/* Left column */}
             <div>
-              <h3 className="text-[56px] font-extrabold leading-[0.95] text-[rgb(var(--text))]">
+              <h3 className="text-3xl font-extrabold leading-[0.95] text-[rgb(var(--text))]">
                 {p.title}
               </h3>
 
               {/* Description block */}
-              <div className="mt-6 w-full max-w-90 rounded-sm bg-[rgb(var(--surface))] p-6 text-white/80 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
+              <div className="mt-6 w-full rounded-xl max-w-700  bg-[rgb(var(--surface))] p-6 text-white/80 shadow-[0_10px_30px_rgba(0,0,0,0.25)]">
                 <p className="leading-relaxed">{p.description}</p>
               </div>
 
@@ -74,13 +74,13 @@ export default function Work() {
             {/* Right column */}
             <div className="relative pb-10">
               {/* Image */}
-              <div className="relative rounded-sm border border-white/10 bg-white/5 shadow-[0_18px_60px_rgba(0,0,0,0.45)]">
+              <div>
                 <Image
                   src={p.imageSrc}
                   alt={p.imageAlt}
                   width={1200}
                   height={800}
-                  className="h-auto w-full object-cover"
+                  className="h-auto w-full object-cover rounded-xl"
                   priority={p.slug === "cardan"}
                 />
               </div>
