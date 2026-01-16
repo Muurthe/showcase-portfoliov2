@@ -121,10 +121,10 @@ export default function Work() {
                     href={`/projects/${p.slug}`}
                     className="
                       inline-flex items-center justify-center
-                      rounded-xl border-2 border-[rgb(var(--surface))]
-                      px-6 py-3 font-semibold text-[rgb(var(--surface))]
+                      rounded-xl border-2 border-[rgb(var(--accent))]
+                      px-6 py-3 font-semibold text-[rgb(var(--accent))]
                       transition
-                      hover:bg-[rgb(var(--surface))] hover:text-[rgb(var(--bg))]
+                      hover:bg-[rgb(var(--accent))] hover:text-[rgb(var(--bg))]
                     "
                   >
                     Learn more
