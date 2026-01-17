@@ -10,19 +10,19 @@ export default function Home() {
       <section id="hero">
         <Hero />
       </section>
-      <div className="h-5 bg-linear-to-b from-[rgb(var(--bg))] to-[rgb(var(--text))]"></div>
-      <section id="about" className="bg-[rgb(var(--text))]">
+      <div className="h-3 bg-linear-to-b from-[rgb(var(--bg))] to-[rgb(var(--muted))]"></div>
+      <section id="about" className="bg-[rgb(var(--muted))]">
         <About />
       </section>
-      <div className="h-5 bg-linear-to-b from-[rgb(var(--text))] to-[rgb(var(--bg))]"></div>
+      <div className="h-3 bg-linear-to-b from-[rgb(var(--muted))] to-[rgb(var(--bg))]"></div>
       <section id="work" className="bg-[rgb(var(--bg))]">
         <Work />
       </section>
-      <div className="h-5 bg-linear-to-b from-[rgb(var(--bg))] to-[rgb(var(--textdark))]"></div>
+      <div className="h-3 bg-linear-to-b from-[rgb(var(--bg))] to-[rgb(var(--textdark))]"></div>
       <section id="contact" className="bg-[rgb(var(--textdark))]">
         <Contact />
       </section>
-      <div className="h-5 bg-linear-to-b from-[rgb(var(--textdark))] to-[rgb(var(--surface))]"></div>
+      <div className="h-3 bg-linear-to-b from-[rgb(var(--textdark))] to-[rgb(var(--surface))]"></div>
     </main>
   );
 }
