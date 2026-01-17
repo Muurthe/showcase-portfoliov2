@@ -2,19 +2,24 @@
 
 Welcome to my portfolio repository.  
 This project represents my personal portfolio website, where I showcase my work, skills, and development as a **front-end / creative developer**. 
+
 ---
 
 ## live website 
+
 [View the live portfolio](https://mirthe-portfoliov2.vercel.app/)
+
 
 ---
 
 ## Technologies Used
 
+
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) 
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
 
 ---
 
@@ -42,6 +47,7 @@ http://localhost:3000
 
 
 ---
+
 
 ## Reflection
 
