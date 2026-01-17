@@ -22,6 +22,7 @@ export default function Home() {
       <section id="contact" className="bg-[rgb(var(--textdark))]">
         <Contact />
       </section>
+      <div className="h-5 bg-linear-to-b from-[rgb(var(--textdark))] to-[rgb(var(--surface))]"></div>
     </main>
   );
 }
